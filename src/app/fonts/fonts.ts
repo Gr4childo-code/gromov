@@ -35,3 +35,14 @@ export const AeonikProBold = localFont({
   display: 'swap',
   variable: '--AeonikPro_bold'
 });
+export const AeonikProBlack = localFont({
+  src: [
+    {
+      path: './static-fonts/AeonikPro-Black.otf',
+      weight: '900',
+      style: 'normal'
+    }
+  ],
+  display: 'swap',
+  variable: '--AeonikPro_black'
+});

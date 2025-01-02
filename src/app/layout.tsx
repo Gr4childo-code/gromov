@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import '@app/globals/globals.scss';
-import { AeonikProBold, AeonikProMedium, AeonikProRegular } from './fonts/fonts';
+import { AeonikProBlack, AeonikProBold, AeonikProMedium, AeonikProRegular } from './fonts/fonts';
 import classNames from 'classnames';
 
 export const metadata: Metadata = {
@@ -15,8 +15,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={classNames(AeonikProMedium.variable, AeonikProBold.variable, AeonikProRegular.variable)}>
-        {children}
+      <body
+        className={classNames(
+          AeonikProMedium.variable,
+          AeonikProBold.variable,
+          AeonikProRegular.variable,
+          AeonikProBlack.variable
+        )}
+      >
+        <div className='container'>{children}</div>
       </body>
     </html>
   );

@@ -1,0 +1,17 @@
+.NavMenu {
+  padding: 0 344px;
+  &__menu {
+    display: flex;
+    gap: 50px;
+    &__item {
+      font-family: var(--AeonikPro_black);
+      font-size: 23px;
+      line-height: 31px;
+      color: var(--primary);
+      text-transform: uppercase;
+      &_active {
+        color: var(--activMenu);
+      }
+    }
+  }
+}
