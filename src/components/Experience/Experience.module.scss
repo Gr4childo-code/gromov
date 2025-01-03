@@ -1,0 +1,26 @@
+.Experience {
+  padding: 0 267px;
+  margin-bottom: 107px;
+
+  &__wrapper {
+    padding: 0 77px;
+  }
+  &__Tools {
+    margin-bottom: 70px;
+    &__wrapper {
+      display: flex;
+      gap: 40px;
+
+      &__item {
+        position: relative;
+        &__image {
+          margin-left: -20px;
+          border-radius: 50%;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

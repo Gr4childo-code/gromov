@@ -1,12 +1,15 @@
 .Services {
-  padding: 0 344px;
   display: flex;
   gap: 110px;
-  &__title {
-    font-size: 23px;
-    line-height: 49px;
-    font-family: var(--AeonikPro_black);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    margin-bottom: 107px;
+    padding: 0 344px;
   }
+
   &__text {
     font-family: var(--AeonikPro_medium);
     font-size: 21px;

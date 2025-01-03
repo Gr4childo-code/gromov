@@ -1,6 +1,10 @@
 import React from 'react';
 import styles from './TitleText.module.scss';
-const TitleText = ({ children }: { children: React.ReactNode }) => {
+type Props = {
+  children: React.ReactNode;
+};
+
+const TitleText = ({ children }: Props) => {
   return <p className={styles.TitleText}>{children}</p>;
 };
 

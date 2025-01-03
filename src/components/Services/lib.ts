@@ -15,5 +15,19 @@ export const services = [
       { id: 6, name: 'Design systems' },
       { id: 7, name: 'Landingpages' }
     ]
+  },
+  {
+    id: 'Branding & Vision',
+    title: 'Branding & Vision',
+    text1:
+      'UI&nbsp;design isn’t&nbsp;just about buttons and components&nbsp;&mdash; It&nbsp;is&nbsp;about reflecting the essence of a&nbsp;brand on&nbsp;digital functional platforms and strengthening brand authenticity at&nbsp;every user touchpoint. I&nbsp;love pushing beyond the conventional, transforming UI&nbsp;into a&nbsp;tool that elevates the brand to&nbsp;a&nbsp;new level.',
+    text2:
+      'I&nbsp;can be&nbsp;just the right person for you when it&nbsp;comes not only to&nbsp;UI&nbsp;design and or&nbsp;webflow solutions, but also someone who thinks in&nbsp;the vision of&nbsp;a&nbsp;brand and emphasizes the purpose in&nbsp;every pixel.',
+    services: [
+      { id: 1, name: 'Brand Design' },
+      { id: 2, name: 'Moodboards' },
+      { id: 3, name: 'Vision Concepts' },
+      { id: 4, name: 'Styleguides' }
+    ]
   }
 ];
