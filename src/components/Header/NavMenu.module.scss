@@ -1,6 +1,10 @@
+@use '@app/globals/_mixins.scss' as *;
+
 .NavMenu {
-  padding: 0 344px;
   margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  @include padding-container;
   &__menu {
     display: flex;
     gap: 50px;
@@ -13,6 +17,13 @@
       &_active {
         color: var(--activMenu);
       }
+    }
+    &__back {
+      font-family: var(--AeonikPro_black);
+      font-size: 23px;
+      line-height: 31px;
+      color: var(--activMenu);
+      text-transform: uppercase;
     }
   }
 }

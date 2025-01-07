@@ -1,0 +1,26 @@
+.Portfolio {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 600px;
+    &:nth-child(2n) {
+      align-self: flex-end;
+    }
+
+    &:nth-child(3n) {
+      height: 900px;
+    }
+
+    &__image {
+      position: relative;
+      height: inherit;
+    }
+
+    &__text {
+      font-size: 43px;
+      line-height: 55px;
+      font-family: var(--AeonikPro_medium);
+    }
+  }
+}

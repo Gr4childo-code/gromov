@@ -1,25 +1,99 @@
+@use '@app/globals/_mixins.scss' as *;
 .Experience {
-  padding: 0 267px;
-  margin-bottom: 107px;
+  margin-bottom: 460px;
 
   &__wrapper {
-    padding: 0 77px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    @include padding-container;
   }
   &__Tools {
     margin-bottom: 70px;
     &__wrapper {
       display: flex;
       gap: 40px;
-
-      &__item {
-        position: relative;
-        &__image {
-          margin-left: -20px;
-          border-radius: 50%;
-          &:first-child {
-            margin-left: 0;
-          }
+      height: 60px;
+      align-items: center;
+    }
+    &__item {
+      position: relative;
+      &__image {
+        margin-left: -20px;
+        border-radius: 50%;
+        &:first-child {
+          margin-left: 0;
         }
+      }
+    }
+  }
+
+  &__Competence {
+    &__wrapper {
+      display: flex;
+      gap: 240px;
+    }
+    &__item {
+      &__name {
+        font-size: 23px;
+        line-height: 48px;
+        font-family: var(--AeonikPro_medium);
+      }
+      &__text {
+        font-size: 15px;
+        line-height: 25px;
+        font-family: var(--AeonikPro_black);
+        max-width: 340px;
+      }
+    }
+  }
+  &__Places {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+
+    &__content {
+      display: flex;
+      gap: 160px;
+    }
+    &__right {
+      font-size: 23px;
+      line-height: 48px;
+      font-family: var(--AeonikPro_medium);
+      min-width: 280px;
+    }
+    &__item {
+      &__place {
+        font-size: 43px;
+        line-height: 55px;
+        font-family: var(--AeonikPro_medium);
+        margin-bottom: 18px;
+      }
+      &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &__text {
+          font-family: var(--AeonikPro_medium);
+          font-size: 21px;
+          line-height: 35px;
+        }
+      }
+    }
+    &__square {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 70px;
+      &__item {
+        &__description {
+          max-width: 558px;
+          margin-bottom: 18px;
+        }
+      }
+      &__right {
+        display: flex;
+        gap: 5px;
       }
     }
   }

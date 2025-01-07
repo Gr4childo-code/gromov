@@ -5,7 +5,7 @@ import styles from './Services.module.scss';
 import TitleText from '@components/shared/TitleText/TitleText';
 const Services = () => {
   return (
-    <ComponentsWrapper id='#services' className={styles.Services__wrapper}>
+    <ComponentsWrapper id='services' className={styles.Services__wrapper}>
       {services.map(item => {
         return (
           <div key={item.id} className={styles.Services}>

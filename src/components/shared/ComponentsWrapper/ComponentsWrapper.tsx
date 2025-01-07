@@ -10,12 +10,10 @@ type Props = {
 };
 const ComponentsWrapper = ({ children, className, id }: Props) => {
   return (
-    <>
-      <NavMenu />
-      <div className={classNames(styles.ComponentsWrapper, className)} id={id}>
-        {children}
-      </div>
-    </>
+    <div id={id}>
+      <NavMenu anchor={id} />
+      <div className={classNames(styles.ComponentsWrapper, className)}>{children}</div>
+    </div>
   );
 };
 

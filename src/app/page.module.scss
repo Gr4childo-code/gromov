@@ -1,0 +1,10 @@
+@use './globals/_mixins' as *;
+
+.container {
+  @include desktop {
+    padding: 0 267px;
+  }
+  @include under-desktop {
+    padding: clamp(10px, 4vw, 100px);
+  }
+}
