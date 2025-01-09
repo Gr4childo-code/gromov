@@ -48,17 +48,18 @@ const Experience = () => {
             <ul className={styles.Experience__Competence__items}>
               {Competencies.find(comp => comp.position === 'left')?.items.map(item => {
                 return (
-                  <li key={item.id} style={{ marginLeft: '20px' }}>
+                  <li key={item.id} style={{ marginLeft: '20px' }} className={styles.Experience__Competence__item}>
                     <p className={styles.Experience__Competence__item__name}>{item.name}</p>
                     <p className={styles.Experience__Competence__item__text}>{item.text}</p>
                   </li>
                 );
               })}
             </ul>
+
             <ul className={styles.Experience__Competence__items}>
               {Competencies.find(comp => comp.position === 'right')?.items.map(item => {
                 return (
-                  <li key={item.id}>
+                  <li key={item.id} className={styles.Experience__Competence__item}>
                     <p className={styles.Experience__Competence__item__name}>{item.name}</p>
                     <p className={styles.Experience__Competence__item__text}>{item.text}</p>
                   </li>

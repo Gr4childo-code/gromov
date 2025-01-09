@@ -15,6 +15,7 @@
       gap: 40px;
       height: 60px;
       align-items: center;
+      flex-wrap: wrap;
     }
     &__item {
       position: relative;
@@ -34,6 +35,9 @@
       gap: 240px;
     }
     &__item {
+      @include phone {
+        width: calc(100% - 70px);
+      }
       &__name {
         font-size: 23px;
         line-height: 48px;
@@ -56,12 +60,14 @@
       display: flex;
       gap: 160px;
     }
+
     &__right {
       font-size: 23px;
       line-height: 48px;
       font-family: var(--AeonikPro_medium);
       min-width: 280px;
     }
+
     &__item {
       &__place {
         font-size: 43px;
@@ -86,6 +92,8 @@
       justify-content: space-between;
       gap: 70px;
       &__item {
+        width: calc(50% - 35px);
+
         &__description {
           max-width: 558px;
           margin-bottom: 18px;

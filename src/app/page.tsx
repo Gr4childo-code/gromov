@@ -6,6 +6,7 @@ import Logo from '@components/shared/Logo/Logo';
 import Experience from '@components/Experience/Experience';
 import Portfolio from '@components/Portfolio/Portfolio';
 import { motion } from 'motion/react';
+import NavMenu from '@components/Header/NavMenu';
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -13,7 +14,7 @@ export default function Home() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: false, amount: 0.9 }}
         transition={{ duration: 0.5 }}
       >
         <Logo />
@@ -23,13 +24,14 @@ export default function Home() {
         <Services />
         <Experience />
         <Portfolio />
+        <NavMenu anchor={''} />
       </div>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        viewport={{ once: false, amount: 0.5 }}
-        transition={{ duration: 1 }}
+        viewport={{ once: false, amount: 0.9 }}
+        transition={{ duration: 0.5 }}
       >
         <Logo />
       </motion.div>

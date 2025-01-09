@@ -13,7 +13,6 @@ const ComponentsWrapper = ({ children, className, id }: Props) => {
     <div id={id}>
       <NavMenu anchor={id} />
       <div className={classNames(styles.ComponentsWrapper, className)}>{children}</div>
-      {id == 'portfolio' && <NavMenu anchor={id} />}
     </div>
   );
 };

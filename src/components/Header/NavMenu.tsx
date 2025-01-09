@@ -26,9 +26,13 @@ const NavMenu = ({ anchor }: { anchor: string }) => {
           );
         })}
       </nav>
-      {anchor === 'portfolio' && (
-        <Link href={'#experience'} className={styles.NavMenu__menu__back}>
-          Back t• experience
+      {anchor === '' && (
+        <Link
+          href={''}
+          className={styles.NavMenu__menu__back}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
+          Back t• t•p
           <svg
             width='12'
             height='18'

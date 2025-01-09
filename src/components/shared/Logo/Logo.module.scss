@@ -1,5 +1,11 @@
+@use '@app/globals/_mixins.scss' as *;
+
 .Logo {
   position: relative;
   height: 440px;
   width: 100%;
+
+  @include tablet {
+    height: 220px;
+  }
 }
