@@ -3,7 +3,20 @@ export const PortfolioL = [
     id: 1,
     title: 'Product Design — Branding & Vision',
     text: 'Creating an&nbsp;identity for a&nbsp;sportswear and accessories retail company',
-    image: 'desport.webp'
+    image: 'desport.webp',
+    large: {
+      image: 'desport_large.webp',
+      title: `Redesign of the visual identity of the Alpro brand, which produces 
+and sells organic and non-organic food and beverages made from 
+soy, almonds, hazelnuts, cashews, rice, oats or coconut`,
+      images: ['desport_large_1.webp', 'desport_large_2.webp'],
+      text: `The modern world of design, has completely stopped engaging with 
+the foundation of a brand, branding. A large number of brands release 
+products that have no single line and are all filled with different visual 
+solutions. Alpro was no exception. In my case study, I showed how 
+an alpro digital product would look like with a link to the brandbook 
+and basic style.`
+    }
   },
   {
     id: 2,
